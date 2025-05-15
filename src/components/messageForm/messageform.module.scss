@@ -1,0 +1,49 @@
+.container {
+  background-color: var(--grey);
+  padding: 1.4rem;
+}
+.wrapper {
+  border-radius: 1.4rem;
+  border: 0.01rem solid var(--grey-border);
+  background: #fff;
+}
+.textarea {
+  resize: none;
+  width: 100%;
+  padding: 0 1.4rem;
+  margin: 1.4rem 0;
+}
+.bottomSection {
+  display: flex;
+  align-items: center;
+  border-top: 0.01rem solid var(--grey-border);
+  justify-content: space-between;
+  padding: 0.8rem 1.4rem;
+}
+.list {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--grey-icon);
+}
+.item {
+  transition: var(--transitions);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    // background: var(--green-hover);
+    .icon {
+      color: var(--green);
+    }
+  }
+}
+.verticalLine {
+  width: 0.01rem;
+  height: 1.4rem;
+  background: var(--grey-border);
+}
