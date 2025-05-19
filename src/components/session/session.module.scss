@@ -1,9 +1,14 @@
 .section {
   display: flex;
+}
+.wrapper {
+  display: flex;
   flex-direction: column;
-  width: 41.7rem;
+  // width: 41.7rem;
+  // width: calc(100% - 32.4rem);
+  width: 100%;
   height: 100vh;
-  position: fixed;
+  // position: fixed;
   border-right: 0.01em solid var(--grey-border);
 }
 .header {
@@ -20,6 +25,7 @@
   display: flex;
   gap: 0.7rem;
   align-items: center;
+  cursor: pointer;
 }
 .user {
   text-align: center;

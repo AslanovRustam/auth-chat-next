@@ -1,6 +1,15 @@
 import { IMessage, IUserForChat } from "@/types/types";
 import mark from "../../public/images/Ellipse 1.png";
 
+export const ROUTES = {
+  dashboard: "/dashboard",
+  contacts: "/contacts",
+  chat: "/chat",
+  phone: "/phone",
+  settings: "/settings",
+  faq: "/faq",
+};
+
 export const defaultUserList: IUserForChat[] = [
   {
     userName: "Cameron Williamson",

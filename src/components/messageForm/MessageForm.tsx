@@ -1,5 +1,6 @@
 "use client";
 import { ChangeEvent, useState } from "react";
+import clsx from "clsx";
 import Camera from "../../../public/camera.svg";
 import Dots from "../../../public/dots.svg";
 import Microphone from "../../../public/microphone.svg";
@@ -8,14 +9,11 @@ import Attach from "../../../public/attach.svg";
 import Blank from "../../../public/blank.svg";
 import Arrow from "../../../public/arrow.svg";
 import s from "./messageform.module.scss";
-import clsx from "clsx";
 
 type Props = {};
 
 function MessageForm({}: Props) {
-  const [input, setInput] = useState<string>(
-    "Choose readable fonts that align with the brand's vibe. Combining a clean sans-serif with|"
-  );
+  const [input, setInput] = useState<string>("");
 
   const handleSetInput = (e: ChangeEvent<HTMLTextAreaElement>): void => {
     const { value } = e.target;
@@ -26,6 +24,7 @@ function MessageForm({}: Props) {
       <div className={s.wrapper}>
         <textarea
           className={s.textarea}
+          placeholder="Type here..."
           value={input}
           onChange={handleSetInput}
         />

@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 export interface IUser {
   userName: string;
   password: string;
+  avatarUrl?: string;
 }
 
 export interface IUserForChat {
@@ -17,4 +18,10 @@ export interface IMessage {
   message: string;
   avatar: string | StaticImageData;
   time: string;
+}
+
+export interface IFile {
+  id: string;
+  name: string;
+  icon: string;
 }
